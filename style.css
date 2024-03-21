@@ -1,0 +1,294 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0px;
+  font-family: 'open sans',sans-serif;
+}
+
+.wrapper {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+.logo a {
+  font-size: 50px;
+  font-weight: 800;
+  float: left;
+  font-family: courier;
+  color: #9290C3;
+}
+
+#home img {
+  width: 555px;
+  height: auto; /* Ini membuat gambar disesuaikan dengan lebar yang ditetapkan, tanpa merusak rasio aspek */
+}
+
+#aboutme img {
+  width: 100%; /* Menjadikan lebar gambar 100% dari lebar parent (wrapper) */
+  height: auto; /* Mempertahankan rasio aspek gambar */
+  max-width: 400px; /* Menetapkan lebar maksimum gambar */
+  display: block; /* Menghilangkan spasi tambahan di bawah gambar */
+  margin: 0 auto; /* Memusatkan gambar secara horizontal */
+}
+
+.menu {
+  float: right;
+  }
+
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 80px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 1;
+  border-bottom: 1px solid #9290C3;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  color:black;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.kolom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'comic sans ms';
+  color: #9290C3;
+}
+
+h2 {
+  font-family: 'comic sans ms';
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #9290C3;
+  width: 100%;
+  line-height: 50px;
+}
+
+a.tbl-biru {
+  background: #2D9596;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-biru:hover {
+  background: #265073;
+  text-decoration: none;
+}
+
+a.tbl-pink {
+  background: #265073;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-pink:hover{
+  background: #2D9596;
+  text-decoration: none;
+}
+
+p {
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+.tengah {
+  text-align: center;
+  width: 100%;
+}
+
+.education-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.kartu.education {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.kartu-education img {
+  width: 70%;
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+
+
+.kartu-education p {
+  font-family: 'comic sans ms';
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  color: #9290C3;
+}
+
+#contact {
+  background: #dedede;
+  padding: 50px 0px; /
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.footer-section {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: 'comic sans ms';
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #9290C3;
+  width: 100%;
+  line-height: 50px;
+}
+
+#copyright {
+  text-align: center;
+  width: 100%;
+  padding: 50px 0px;
+  margin-top: 50px;
+}
+
+/* form Contact Me */
+#contact {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+#contact .wrapper {
+  text-align: center;
+}
+
+#contact h2 {
+  color: #9290C3;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact form div {
+  margin-bottom: 20px;
+}
+
+#contact form label {
+  display: block;
+  font-size: 20px;
+  color: #333;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact form textarea {
+  height: 150px;
+}
+
+#contact form button[type="submit"] {
+  background-color: #2D9596;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact form button[type="submit"]:hover {
+  background-color: #265073;
+}
+
+
+#toggle-dark-mode {
+  font-family: Arial, sans-serif;
+  background-color: #2D9596;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#toggle-dark-mode:hover {
+  background-color: #265073;
+}
+
+/* CSS untuk tema gelap */
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
